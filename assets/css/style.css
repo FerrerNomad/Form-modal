@@ -1,0 +1,570 @@
+    /*---------------------
+Fonts
+---------------------*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+    /*---------------------
+Colors
+---------------------*/
+    
+     :root {
+        --main-color: #02577A;
+        --main-color-transparent: #02577A99;
+        --main-color-hover: #012c3f;
+        --main-color-white: #02577A;
+        --color-1: #011e3f;
+        --color-2: #0680a8;
+        --color-3: #42b6ec;
+        --social-footer-color-hover: #02577A;
+        --black: #000000;
+        --black-hover: #000000;
+        --green-color: #10e037;
+        --green-hover-color: #27b141;
+        --blue-color: #1310e0;
+        --blue-hover-color: #05038f;
+        --white: #ffffff;
+        --white-transparent: #ffffff99;
+        --text-dark: #212529;
+        --text-transparent: #21252950;
+        --bg-dark: #212529;
+        --main-to-dark-color: var(--bg-dark);
+        --transparent: #00000000;
+        --border-form: #00000000;
+        --popup-background-color: #ffffffcc;
+        --newsletter-color: #02577A;
+        --newsletter-color-transparent: #001e2bab;
+        --tell-background: #02577A;
+        --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+        --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+        --black-900: #000000;
+        --black-400: #555555;
+        --black-300: #868686;
+        --black-100: #f7f7f7;
+        --black-000: #ffffff;
+    }
+    /*---------------------
+Colors Theme Dark
+---------------------*/
+    
+    body.dark {
+        background-color: var(--bg-dark);
+        --black-100: var(--bg-dark);
+        --black-000: var(--bg-dark);
+        --main-color: #1e94ca;
+        --main-color-hover: #00547a;
+        --main-color-transparent: #0075ac99;
+        --white: #212529;
+        --white-transparent: #21252999;
+        --text-dark: #bbbbbb;
+        --color-1: #094c99;
+        --color-3: #02577A;
+        --main-color-hover: #004b6b;
+        --transparent: #00000000;
+        --newsletter-color: #032e42;
+        --newsletter-color-transparent: #00141bab;
+        --popup-background-color: #00000099;
+        --tell-background: #00374e;
+        --shadow-black-100: var(--shadow-black-300);
+        --black-alpha-100: rgba(255, 255, 255, 0.05);
+        --black-900: #ffffff;
+        --black-400: #bbbbbb;
+        --black-300: #3f3f3f;
+        --social-footer-color-hover: #42b6ec;
+        --border-form: #1e94ca;
+    }
+    /*---------------------
+Global
+---------------------*/
+    
+    body {
+        color: var(--main-color);
+        line-height: 1.7;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4 {
+        font-weight: 700;
+        color: var(--main-color);
+    }
+    
+    .bg-cover {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none!important;
+    }
+    
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: var(--main-color);
+        text-decoration: none;
+    }
+    
+    .text-brand {
+        color: var(--main-color) !important;
+    }
+    /*---------------------
+Contact Section
+---------------------*/
+    
+    .contact {
+        background-color: var(--black-100);
+    }
+    
+    .title-contact {
+        margin-left: -10px;
+    }
+    
+    .margin-contact {
+        margin-left: -28px;
+    }
+    
+    .contact-info-item {
+        color: var(--main-color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: justify;
+        margin: 0 0 40px;
+    }
+    
+    .term-form {
+        color: var(--main-color);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    
+    .term-form:hover {
+        text-decoration: none;
+    }
+    
+    .contact-info-item {
+        position: relative;
+        padding-left: 55px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    
+    .contact-info-item i {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+        font-size: 16px;
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+        text-align: center;
+        line-height: 38px;
+    }
+    
+    .contact-info-item h4 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0;
+        line-height: 26px;
+        color: var(--text-dark);
+    }
+    
+    .contact-info-item p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0;
+        line-height: 26px;
+        color: var(--text-dark);
+    }
+    
+    .contact-form .form-group {
+        margin-left: -10px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-form .form-control {
+        height: 52px;
+        border: 1px solid transparent;
+        box-shadow: var(--shadow-black-100);
+        border-radius: 8px;
+        padding: 0 24px;
+        color: var(--black-900);
+        background-color: var(--black-000);
+        transition: all 0.5s ease;
+        margin-top: 0;
+    }
+    
+    .contact-form textarea.form-control {
+        height: 140px;
+        padding-top: 12px;
+        resize: none;
+    }
+    
+    .contact-form .form-control:focus {
+        border-color: var(--main-color);
+    }
+    
+    .contact-text-about {
+        color: var(--text-dark);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: justify;
+    }
+    /*------------------------------
+chat-button 
+---------------------------*/
+    
+    .chat_icon {
+        position: fixed;
+        bottom: 0;
+        right: 30px;
+        z-index: 1999;
+        padding: 3px 10px 3px 10px;
+        border-radius: 50% 8px 50% 50%;
+        background-color: var(--main-color-transparent);
+        color: var(--white);
+        font-size: 28px;
+        color: var(--white-transparent);
+        margin-bottom: 25px;
+        cursor: pointer;
+        box-shadow: var(--shadow-black-300)
+    }
+    
+    .chat_icon:hover {
+        background-color: var(--main-color);
+        transition: all 0.1s ease;
+    }
+    
+    .chat_box {
+        width: 355px;
+        max-width: 85%;
+        height: 475px;
+        position: fixed;
+        bottom: 90px;
+        border-radius: 24px;
+        right: 30px;
+        background-color: var(--white-transparent);
+        box-shadow: var(--shadow-black-100);
+        backdrop-filter: blur( 5.5px);
+        -webkit-backdrop-filter: blur( 5.5px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+        z-index: 1000;
+        transition: all 0.3s ease-out;
+        transform: scaleY(0);
+    }
+    
+    .chat_box.active {
+        transform: scaleY(1);
+    }
+    
+    #messages {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .my-conv-form-wrapper textarea {
+        height: 100px;
+        background-color: var(--white-transparent);
+        overflow: hidden;
+        resize: none;
+        border-radius: 8px;
+        border: 1px solid var(--main-color) !important;
+    }
+    
+    .my-conv-form-wrapper:hover textarea {
+        background-color: var(--white-transparent);
+    }
+    
+    .my-conv-form-wrapper input {
+        height: 100px;
+        background-color: var(--white-transparent) !important;
+        border-radius: 8px !important;
+        overflow: hidden;
+        resize: none;
+        border: 1px solid var(--main-color) !important;
+    }
+    
+    .my-conv-form-wrapper:hover input {
+        background-color: var(--white-transparent) !important;
+    }
+    
+    .hidden {
+        display: none !important;
+    }
+    
+    .contact-section {
+        background: #010519;
+        color: #fff;
+    }
+    
+    .contact_section_left {
+        padding: 40px 0;
+    }
+    
+    .contact_box {
+        padding: 0 50px;
+        margin-bottom: 30px;
+    }
+    
+    .contact_box:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .contact_box h3 {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    
+    .contact_box i.fa {
+        color: #fff;
+        font-size: 30px;
+        display: block;
+        padding: 0 0 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .contact_section_right {
+        padding: 40px 0;
+        background-color: #020f46;
+        border-radius: 24px;
+    }
+    
+    .contact_section_right h2 {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    
+    input:not([type="submit"]),
+    textarea {
+        border: 1px solid #abb3c0;
+        color: #667080;
+        padding: 10px 16px;
+        margin: 0 0 15px 0;
+        background-color: white;
+        height: 42px;
+        outline: none;
+        width: 100%;
+        text-align: left;
+        border-radius: 4px;
+    }
+    
+    textarea {
+        height: 80px
+    }
+    
+    input[type="submit"] {
+        border: 0px;
+        color: #ffffff99;
+        background: #010519;
+        padding: 11px 25px;
+        margin: 0 0 185px 0;
+        height: 42px;
+        outline: none;
+        width: auto;
+        border-radius: 4px;
+        text-align: center;
+    }
+    
+    .logo-modal {
+        width: 195px;
+        height: 80px;
+        margin: -5px 50px -5px 0px;
+    }
+    
+    .btn-brand-contact {
+        border-color: 1px solid var(--white);
+        background: var(--main-color);
+        color: var(--white);
+        border-radius: 8px;
+        font-weight: 500;
+        width: auto;
+        text-align: center;
+        text-align: justify;
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: -3px;
+        margin-bottom: -10px;
+    }
+    
+    .btn-brand-contact:hover {
+        background-color: var(--white);
+        border-color: 1px solid var(--main-color);
+        color: var(--main-color);
+        transition: all 0.5s ease;
+        animation: none;
+    }
+    /*---------------------
+Form Modal
+---------------------*/
+    
+    .modal-body {
+        background-color: var(--white);
+        border-radius: 0px 0px 16px 16px;
+        border: var(--transparent) !important;
+    }
+    
+    .modal-width {
+        max-width: 450px;
+        margin: auto 0;
+        align-items: center;
+        position: relative;
+    }
+    
+    .modal-content {
+        border-radius: 16px;
+        background-color: var(--white);
+    }
+    
+    input.form-control {
+        border-color: var(--main-color);
+        height: 44px;
+        margin-bottom: 2px;
+        padding: center auto;
+        color: var(--text-dark);
+        margin-top: 10px;
+    }
+    
+    input.form-control:hover {
+        border-color: var(--main-color);
+        background-color: transparent;
+        color: var(--text-dark);
+    }
+    
+    textarea.form-control {
+        border-color: var(--main-color);
+    }
+    
+    .form-control {
+        background-color: rgba(0, 0, 0, 0.04);
+        border-color: rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+        color: var(--text-dark);
+    }
+    
+    .form-control:focus {
+        box-shadow: none;
+        border-color: var(--main-color);
+        background-color: rgba(0, 0, 0, 0.04);
+        color: var(--text-dark);
+        border-radius: 16px;
+    }
+    
+    .modal-title {
+        margin-left: 14px;
+        margin-top: -25px;
+        color: var(--text-dark);
+    }
+    
+    .modal-panel {
+        border-radius: 20px;
+        max-width: 300px;
+    }
+    
+    .modal-text {
+        color: var(--black-900);
+        margin-left: -40px;
+        margin: -5px 0 -5px 14px;
+    }
+    
+    #app {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .startHidden {
+        display: none;
+    }
+    
+    h3 {
+        margin: 4px;
+        font-weight: normal;
+    }
+    
+    input {
+        width: 80%;
+        margin: 4px;
+        padding: 4px;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid var(--black-400);
+        outline: none;
+        margin: 0;
+    }
+    
+    .btn-login {
+        background: var(--main-color);
+        color: var(--white);
+        border: 1px solid var(--main-color) !important;
+        border-radius: 8px;
+        font-weight: 500;
+        padding: 5px 12px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        margin: 10px;
+        outline: none;
+    }
+    
+    .btn-login:hover {
+        background-color: var(--white);
+        color: var(--main-color);
+        transition: all 0.5s ease;
+        animation: none;
+    }
+    
+    .alternative {
+        background-color: var(--white);
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+        border-radius: 8px;
+        font-weight: 500;
+        padding: 5px 12px;
+        margin-left: 20px;
+        font-size: 14px;
+        margin: 10px;
+    }
+    
+    .alternative:hover {
+        background-color: var(--main-color);
+        color: var(--white);
+        transition: all 0.5s ease;
+        animation: none;
+    }
